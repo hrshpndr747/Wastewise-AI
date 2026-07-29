@@ -11,9 +11,9 @@ import numpy as np
 import tensorflow as tf
 from PIL import Image, ImageOps, UnidentifiedImageError
 
-MODEL_PATH = Path(os.getenv("WASTEWISE_MODEL_PATH", "artifacts/best_model.keras"))
-LABELS_PATH = Path(os.getenv("WASTEWISE_LABELS_PATH", "artifacts/labels.json"))
-CONFIDENCE_THRESHOLD = float(os.getenv("WASTEWISE_CONFIDENCE_THRESHOLD", "0.80"))
+MODEL_PATH = Path(os.getenv("ECOVISION_MODEL_PATH", os.getenv("WASTEWISE_MODEL_PATH", "artifacts/best_model.keras")))
+LABELS_PATH = Path(os.getenv("ECOVISION_LABELS_PATH", os.getenv("WASTEWISE_LABELS_PATH", "artifacts/labels.json")))
+CONFIDENCE_THRESHOLD = float(os.getenv("ECOVISION_CONFIDENCE_THRESHOLD", os.getenv("WASTEWISE_CONFIDENCE_THRESHOLD", "0.80")))
 
 RECOMMENDATIONS = {
     "cardboard": "Flatten it and keep it clean and dry before recycling.",

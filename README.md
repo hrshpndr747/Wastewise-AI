@@ -1,6 +1,6 @@
-# WasteWise AI — Phase 1
+# EcoVision AI — Phase 1
 
-WasteWise AI is an end-to-end image-classification project that predicts one of five recyclable waste categories:
+EcoVision AI is an end-to-end image-classification project that predicts one of five recyclable waste categories:
 
 - cardboard
 - glass
@@ -61,7 +61,7 @@ Do not place all images directly inside `data/raw`. Each category must have its 
 ## Project structure
 
 ```text
-wastewise-ai/
+ecovision-ai/
 ├── artifacts/                  # Generated model and evaluation files
 ├── backend/
 │   ├── app/

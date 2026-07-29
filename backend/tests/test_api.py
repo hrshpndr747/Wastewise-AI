@@ -8,7 +8,7 @@ client = TestClient(app)
 def test_root() -> None:
     response = client.get("/")
     assert response.status_code == 200
-    assert response.json()["message"] == "WasteWise AI API"
+    assert response.json()["message"] == "EcoVision AI API"
 
 
 def test_health() -> None:

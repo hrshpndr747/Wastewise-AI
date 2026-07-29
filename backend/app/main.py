@@ -26,7 +26,7 @@ async def lifespan(_: FastAPI):
 
 
 app = FastAPI(
-    title="WasteWise AI API",
+    title="EcoVision AI API",
     version="1.0.0",
     description="Phase 1 recyclable-waste image classifier.",
     lifespan=lifespan,
@@ -47,7 +47,7 @@ app.add_middleware(
 @app.get("/")
 def root() -> dict[str, str]:
     return {
-        "message": "WasteWise AI API",
+        "message": "EcoVision AI API",
         "docs": "/docs",
         "health": "/health",
     }

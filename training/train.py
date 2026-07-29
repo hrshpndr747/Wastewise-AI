@@ -17,7 +17,7 @@ from sklearn.metrics import (
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Train the WasteWise CNN.")
+    parser = argparse.ArgumentParser(description="Train the EcoVision CNN.")
     parser.add_argument("--data-dir", type=Path, default=Path("data/processed"))
     parser.add_argument("--artifacts-dir", type=Path, default=Path("artifacts"))
     parser.add_argument("--image-size", type=int, default=224)
@@ -101,7 +101,7 @@ def build_model(image_size: int, number_of_classes: int) -> tf.keras.Model:
     x = tf.keras.layers.Dropout(0.2)(x)
     outputs = tf.keras.layers.Dense(number_of_classes, activation="softmax")(x)
 
-    model = tf.keras.Model(inputs, outputs, name="wastewise_mobilenetv2")
+    model = tf.keras.Model(inputs, outputs, name="ecovision_mobilenetv2")
 
     model.compile(
         optimizer=tf.keras.optimizers.Adam(learning_rate=1e-3),
@@ -173,7 +173,7 @@ def evaluate_and_save(
     )
     figure, axis = plt.subplots(figsize=(8, 8))
     display.plot(ax=axis, cmap="Blues", colorbar=False, values_format="d")
-    axis.set_title("WasteWise Test Confusion Matrix")
+    axis.set_title("EcoVision Test Confusion Matrix")
     figure.tight_layout()
     figure.savefig(
         artifacts_dir / "confusion_matrix.png",

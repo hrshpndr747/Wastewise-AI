@@ -104,7 +104,7 @@ export default function App() {
           <Box textAlign="center">
             <RecyclingOutlinedIcon sx={{ fontSize: 58 }} />
             <Typography variant="h3" component="h1" fontWeight={800}>
-              WasteWise AI
+              EcoVision AI
             </Typography>
             <Typography variant="h6" color="text.secondary">
               Upload one recyclable item and classify its material.

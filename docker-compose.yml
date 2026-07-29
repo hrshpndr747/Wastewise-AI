@@ -6,9 +6,9 @@ services:
     ports:
       - "8000:8000"
     environment:
-      WASTEWISE_MODEL_PATH: artifacts/best_model.keras
-      WASTEWISE_LABELS_PATH: artifacts/labels.json
-      WASTEWISE_CONFIDENCE_THRESHOLD: "0.80"
+      ECOVISION_MODEL_PATH: artifacts/best_model.keras
+      ECOVISION_LABELS_PATH: artifacts/labels.json
+      ECOVISION_CONFIDENCE_THRESHOLD: "0.80"
 
   frontend:
     build:

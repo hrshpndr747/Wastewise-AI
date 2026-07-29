@@ -48,7 +48,7 @@ def split_class(
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Validate and stratify WasteWise raw images."
+        description="Validate and stratify EcoVision raw images."
     )
     parser.add_argument("--raw-dir", type=Path, default=Path("data/raw"))
     parser.add_argument("--output-dir", type=Path, default=Path("data/processed"))
