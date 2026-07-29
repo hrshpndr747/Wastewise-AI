@@ -87,7 +87,7 @@ wastewise-ai/
 └── README.md
 ```
 
-# Phase 1 — Set up Python
+# Step 1 — Set up Python
 
 From the project root:
 
@@ -117,7 +117,7 @@ python -c "import tensorflow as tf; print(tf.__version__); print(tf.config.list_
 
 A GPU is not required. The project will train on CPU, although it will take longer.
 
-# Phase 2 — Prepare the dataset
+# Step 2 — Prepare the dataset
 
 Validate and split the raw images:
 
@@ -146,7 +146,7 @@ To rebuild the split:
 python training/prepare_dataset.py --overwrite
 ```
 
-# Phase 3 — Train the CNN
+# Step 3 — Train the CNN
 
 ```bash
 python training/train.py
@@ -171,7 +171,7 @@ artifacts/
 └── classification_report.csv
 ```
 
-# Phase 4 — Test a local image
+# Step 4 — Test a local image
 
 ```bash
 python training/predict_local.py path/to/test-image.jpg
@@ -194,7 +194,7 @@ Example output:
 
 Predictions below the configured threshold are returned with the status `uncertain`.
 
-# Phase 5 — Run the backend
+# Step 5 — Run the backend
 
 The trained model must exist at `artifacts/best_model.keras`.
 
@@ -214,7 +214,7 @@ Health endpoint:
 http://localhost:8000/health
 ```
 
-# Phase 6 — Run the frontend
+# Step 6 — Run the frontend
 
 Open a second terminal:
 
