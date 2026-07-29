@@ -13,8 +13,7 @@ data/raw/*
 !data/raw/.gitkeep
 data/processed/*
 !data/processed/.gitkeep
-artifacts/*
-!artifacts/.gitkeep
+# artifacts/
 logs/*
 !logs/.gitkeep
 ww_venv/
