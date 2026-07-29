@@ -1,4 +1,4 @@
-# WasteWise AI — Milestone 1
+# WasteWise AI — Phase 1
 
 WasteWise AI is an end-to-end image-classification project that predicts one of five recyclable waste categories:
 
@@ -8,7 +8,7 @@ WasteWise AI is an end-to-end image-classification project that predicts one of 
 - paper
 - plastic
 
-Milestone 1 contains:
+Phase 1 contains:
 
 1. Dataset validation and stratified train/validation/test splitting
 2. MobileNetV2 Transfer Learning Image Classifier
@@ -39,7 +39,7 @@ For the first version, use the TrashNet dataset. It contains folders for:
 - plastic
 - trash
 
-Milestone 1 intentionally uses only the first five classes.
+Phase 1 intentionally uses only the first five classes.
 
 Dataset source:
 
@@ -61,7 +61,7 @@ Do not place all images directly inside `data/raw`. Each category must have its 
 ## Project structure
 
 ```text
-wastewise-ai-milestone1/
+wastewise-ai/
 ├── artifacts/                  # Generated model and evaluation files
 ├── backend/
 │   ├── app/

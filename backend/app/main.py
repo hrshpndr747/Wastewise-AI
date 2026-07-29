@@ -28,7 +28,7 @@ async def lifespan(_: FastAPI):
 app = FastAPI(
     title="WasteWise AI API",
     version="1.0.0",
-    description="Milestone 1 recyclable-waste image classifier.",
+    description="Phase 1 recyclable-waste image classifier.",
     lifespan=lifespan,
 )
 
